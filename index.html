@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+<body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-lg-2 col-12 col-sm-12 col-lg-2">
+      <h5 class="heading">Beer's Legacy</h4>
+      <img src="images\snake.png">
+      <br>
+      <a href="#canvas" class="btn btn-success" id="start_game" style="background-color: #6ab04c; min-width: 150px;"> Start Game </a>
+      <br>
+      <br>
+      <a href="#canvas" class="btn btn-success" id="reset_game" style="background-color: #6ab04c; min-width: 150px;">reset Game</a>
+    </div>
+    <div class="col-md-7 col-sm-12 border-right col-12 col-lg-8">
+      <canvas width="400px" height="400px" class="mt-5" id="canvas">
+      </canvas>
+    </div>
+    <div class="col-md-1 col-5 offset-3 offset-md-0 col-lg-2 offset-sm-4 offset-md-0 mt-5 col-lg-2 offset-lg-0">
+      <div class="card" style="width: 12rem;">
+        <div class="card-title">
+        <h5>Score Board</h5>
+        </div>
+        <div class="card-body"><h2 id="score"></h2></div>
+      </div>
+      <div class="mt-5 " >
+        <span style="color: black; font-size: 20px;" >Speedometer</span> 
+      </div>
+      <div class="btn-group-vertical mt-3 mb-3">
+        <button id="speed_1" class="btn btn-success" >1</button>
+        <button id="speed_2" class="btn btn-success">2</button>
+        <button id="speed_3" class="btn btn-success active">3</button>
+        <button id="speed_4" class="btn btn-success">4</button>
+        <button id="speed_5" class="btn btn-success">5</button>
+      </div>
+        <div class="auto_game ml-5" id="auto_mode" href="#canvas">
+          <span class="auto_game_span">Auto mode</span> 
+        </div>
+      </div>
+  
+ </div>
+</div>
+
+<script src="canvas1.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
